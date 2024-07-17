@@ -1,5 +1,4 @@
 /* resets */
-
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -9,7 +8,6 @@
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-  background-color: var(--primary-yellow);
 }
 img, picture, video, canvas, svg {
   display: block;
@@ -48,26 +46,71 @@ p, h1, h2, h3, h4, h5, h6 {
   font-weight: var(--font-weight); 
   font-style: italic; 
 }
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Figtree","san-serif";
+  font-optical-sizing: auto;
+  background-color: var(--primary-yellow);
+}
 main {
   width: 100%;
   max-width: 24rem;
+  padding: 1.5rem;
+  border-radius: 1rem;
   background-color: var(--neutral-white);
+  border: 1.80px solid var(--neutral-black);
+  box-shadow: 15px 15px rgb(0, 0, 0);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.blog-preview-img {
+  width: 21rem;
+  height: 12.5rem;
+  border-radius: .75rem;
+  margin-bottom: 1.5rem;
+}
+.blog-post-preview-description {
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-bold);
+  background-color: var(--primary-yellow);
+  padding: .25rem .75rem;
+  display: inline-block;
+  border-radius: .25rem;
+  margin-bottom: .75rem;
+}
+.blog-post-preview-date {
+  font-size: var(--font-size-small);
+  margin-bottom: .75rem;
+}
+.blog-post-preview-title {
+  font-size: var(--font-size-large);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: .75rem;
+  transition: background-color 0.25s ease-in-out;
+  cursor: pointer; 
+}
+.blog-post-preview-title:hover {
+  color: var(--primary-yellow);
+}
+.blog-post-preview-blurb {
+  font-size: var(--font-size-medium);
+  margin-bottom: 1.5rem;
+}
+.blog-post-preview-author {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+}
+.blog-post-author-img img {
+  width: 2rem;
+  height: 2rem;
+}
+.blog-post-author {
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-bold);
+}
 footer {
   position: fixed;
   bottom: 0;
@@ -77,5 +120,23 @@ footer {
 }
 
 .attribution a { 
-  color: hsl(228, 45%, 44%); 
+  color: var(--neutral-black);
+  font-weight: var(--font-weight-bold); 
+  cursor: pointer; 
+}
+
+/* media queries */
+@media (max-width: 26.25rem) {
+  main {
+    max-width: 20.438rem;
+  }
+  .blog-post-preview-description {
+    font-size: .75rem;
+  }
+  .blog-post-preview-date {
+    font-size: .75rem;
+  }
+  .blog-post-preview-title {
+    font-size: 1.25rem;
+  }
 }
