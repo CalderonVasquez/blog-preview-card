@@ -63,7 +63,7 @@ main {
   border-radius: 1rem;
   background-color: var(--neutral-white);
   border: 1.80px solid var(--neutral-black);
-  box-shadow: 15px 15px rgb(0, 0, 0);
+  box-shadow: 7.50px 7.50px rgb(0, 0, 0);
 }
 .blog-preview-img {
   width: 21rem;

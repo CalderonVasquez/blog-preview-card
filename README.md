@@ -23,11 +23,10 @@ Users should be able to:
 
 ### Screenshot
 
-![](assets/images/blog-preview-SS.png)
+![](assets/images/updated-blogSS.png)
 
 ### Links
 
-- Solution URL: [solution URL here](https://www.frontendmentor.io/solutions/responsive-blog-preview-card-using-html5-custom-properties-flexbox-rZ0CjAuAG3)
 - Live Site URL: [live site URL here](https://blog-blurb-card.netlify.app/)
 
 ### Built with
